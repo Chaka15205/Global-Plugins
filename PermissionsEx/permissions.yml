@@ -1,0 +1,279 @@
+groups:
+  NewPlayer:
+    default: true
+    prefix: '&f[&5New Player&f] '
+    permissions:
+    - essentials.helpop
+    - factions.kit.rank2
+    - lwc.flag.*
+    - lwc.remove
+    - lwc.unlock
+    - lwc.modify
+    - lwc.create.*
+    - factions.kit.fullplayer
+    - ChestShop.nofee
+    - essentials.kits.tools
+    - modifyworld.*
+    - essentials.help
+    - essentials.warp
+    - essentials.afk
+    - essentials.back
+    - essentials.tpaccept
+    - essentials.tpa
+    - essentials.home
+    - essentials.sethome
+    - essentials.msg
+    - essentials.spawn
+    - essentials.pay
+    - essentials.balance
+    - essentials.kit.tools
+    - essentials.signs.use.heal
+    - essentials.signs.use.kit
+    - essentials.signs.use.time
+    - essentials.signs.use.weather
+    - essentials.signs.use.warp
+    - essentials.chat.url
+  Trusted:
+    prefix: '&f[&aTrusted&f] '
+    inheritance:
+    - NewPlayer
+    permissions:
+    - essentials.suicide
+    - lwc.remove
+    - lwc.cmodify
+    - lwc.cprivate
+    - essentials.setwarp
+  Respected:
+    prefix: '&f[&6Respected&f] '
+    inheritance:
+    - Trusted
+    permissions:
+    - essentials.tpahere
+    - essentials.warp.list
+  Builder:
+    prefix: '&f[&3Builder&f]&3 '
+    inheritance:
+    - Respected
+    permissions:
+    - essentials.fly
+    - logblock.tools.toolblock
+    - logblock.tp
+    - logblock.lookup
+    - logblock.spawnTools
+    - logblock.tools.tool
+    - essentials.heal
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.book
+    - essentials.chat.format
+    - essentials.chat.shout
+    - essentials.chat.question
+    - essentials.compass
+    - essentials.delhome
+    - essentials.depth
+    - essentials.exp
+    - essentials.getpos
+    - essentials.hat
+    - essentials.home
+    - essentials.ignore
+    - essentials.itemdb
+    - essentials.kit
+    - essentials.kits.tools
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.me
+    - essentials.msg
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.pay
+    - essentials.ping
+    - essentials.powertool
+    - essentials.powertooltoggle
+    - essentials.protect
+    - essentials.recipe
+    - essentials.seen
+    - essentials.sethome.10
+    - essentials.sethome.bed
+    - essentials.sethome.multiple
+    - essentials.signs.use.*
+    - essentials.signs.create.disposal
+    - essentials.signs.create.mail
+    - essentials.signs.create.protection
+    - essentials.signs.create.trade
+    - essentials.signs.break.disposal
+    - essentials.signs.break.mail
+    - essentials.signs.break.protection
+    - essentials.signs.break.trade
+    - essentials.suicide
+    - essentials.time
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.worth
+    - essentials.jail.allow.mail
+    - essentials.jail.allow.ping
+    - essentials.jail.allow.seen
+  Trial-Mod:
+    prefix: '&f[&bTrial-Mod&f]&b '
+    inheritance:
+    - Builder
+    permissions:
+    - essentials.jails
+    - essentials.jail
+    - essentials.mute
+    - logblock.rollback
+  Moderator:
+    prefix: '&f[&1Moderator&f]&1 '
+    inheritance:
+    - Trial-Mod
+    permissions:
+    - lwc.mod
+    - noflypvp.exempt.*
+    - factions.admin
+    - coreprotect.restore
+    - coreprotect.rollback
+    - coreprotect.lookup
+    - coreprotect.inspect
+    - ChestShop.mod
+    - capsblock.ignore
+    - anticheat.mod
+    - essentials.item
+    - essentials.ban
+    - essentials.i
+    - essentials.tempban
+    - essentials.kick
+    - essentials.kill
+    - essentials.heal.others
+    - nocheatplus.notify
+  Admin:
+    prefix: '&f[&cAdmin&f]&c '
+    inheritance:
+    - Moderator
+    permissions:
+    - lwc.admin
+    - sb.*
+    - mcmmo.*
+    - iconomy.*
+    - factions.*
+    - coreprotect.*
+    - ChestShop.*
+    - capsblock.*
+    - nocheatplus.*
+    - announcer.*
+    - noflypvp.*
+    - essentials.*
+    - worldedit.*
+    - worldguard.*
+  Co-Owner:
+    prefix: '&f[&3Builder&f] [&4Co-Owner&f] '
+    inheritance:
+    - Moderator
+    permissions:
+    - lwc.admin
+    - sb.*
+    - mcmmo.*
+    - iconomy.*
+    - factions.*
+    - coreprotect.*
+    - ChestShop.*
+    - capsblock.*
+    - anticheat.*
+    - announcer.*
+    - noflypvp.*
+    - essentials.*
+    - worldedit.*
+    - worldguard.*
+  Owner:
+    prefix: '&f[&4Owner&f] '
+    permissions:
+    - permissions.*
+    inheritance:
+    - Admin
+  Pioneer:
+    prefix: '&f[&8Pioneer&f] '
+    inheritance:
+    - Builder
+    permissions:
+    - lwc.shownotices
+    - lwc.mod
+    - essentials.fly
+    - essentials.heal
+    - essentials.repair
+    - essentials.ptime
+  ExtremeSurvivalist:
+    prefix: '&f[&8Extreme&0Survivalist&f] '
+    inheritance:
+    - Pioneer
+    permissions:
+    - essentials.enchant
+    - essentials.killall
+    - essentials.ci
+    - essentials.clearinventory
+    - essentials.vanish
+    - essentials.repair.armor
+    - essentials.repair.enchanted
+    - disguisecraft.mob.pig
+    - disguisecraft.mob.cow
+    - disguisecraft.mob.sheep
+    - disguisecraft.mob.zombie
+    - essentials.sethome.multiple.unlimited
+    - essentials.sethome.multiple
+    - essentials.delhome
+  Guardian:
+    prefix: '&f[&9Guardian&f] '
+    inheritance:
+    - Respected
+    permissions:
+    - essentials.heal
+    - essentials.fly
+users:
+  00fa4033-421f-48d9-bc69-a0d9c9c4973e:
+    group:
+    - Owner
+    options:
+      name: Christophernjsp
+    permissions:
+    - '*'
+  47b02615-2208-493e-bf4c-8511ccb61d97:
+    group:
+    - Admin
+    permissions:
+    - '*'
+    options:
+      name: Pro_JellyFish
+  0f1721e5-b236-3e5f-87f7-eedf71cdf392:
+    group:
+    - Owner
+    options:
+      name: Christophernjsp
+    permissions:
+    - '*'
+  0a782f62-56ab-4dc6-9d9e-4efdde4d8e62:
+    group:
+    - Guardian
+    options:
+      name: getsome187
+  8d8d1f97-ff1b-4740-bc4d-8e2a1ad9efe6:
+    group:
+    - Respected
+  5dc977d6-e857-4709-b191-ceb3d8fc4050:
+    group:
+    - Moderator
+    permissions:
+    - '*'
+    options:
+      name: Johnny5646
+  9d8340b9-9b24-4938-abbb-74f7f5d1a15c:
+    group:
+    - Owner
+    options:
+      name: Legeis
+    permissions:
+    - '*'

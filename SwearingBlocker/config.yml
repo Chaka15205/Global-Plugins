@@ -1,0 +1,14 @@
+update-checker: true
+check-signs: true
+list:
+- ass
+- fuck
+- dick
+- gay
+- asshole
+- ass
+replace bad word: false
+lightning: true
+warnings:
+  use: true
+  max: 10

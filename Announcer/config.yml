@@ -1,0 +1,17 @@
+#######################################################
+##                   Created By                      ##
+##                    Deckerz                        ##
+#######################################################
+announcement:
+    enabled: true
+    random: false
+    prefix: '&c[Announcement]&4 '
+    interval: 40
+    check-for-updates: true
+    auto-update: false
+    messages:
+    - 'Visit our website at http://criliscraft.net/'
+    - 'Donate at http://shop.criliscraft.net/'
+    - 'Vote at http://vote.criliscraft.net/'
+    - 'Contact Us at contact@criliscraft.net'
+    - 'Please let us know about any bugs at support@criliscraft.net'

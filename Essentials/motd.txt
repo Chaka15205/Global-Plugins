@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&3Welcome, {PLAYER}&3!
+&3You are playing &1&lCri&5&lLis &2&lCraft
+&3Type &c/help &3For a list of commands.
